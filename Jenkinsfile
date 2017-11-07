@@ -9,7 +9,7 @@ pipeline {
                 echo 'Maven Build in Progress..'
 				try{
 				sh 'mvn clean package'
-				}catch{Exception e) {
+				}catch(Exception e) {
 				//Not Found 
 				}				
             }
