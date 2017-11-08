@@ -68,6 +68,7 @@
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>${jstl.version}</version>
+
 		</dependency>
 
 	</dependencies>
@@ -109,6 +110,8 @@
 				<configuration>
           		        <url>http://localhost:8080/manager/text</url>
                 		  <server>localhost</server>
+				<username>tomcat</username>
+        			<password>tomcat</password>
          			   <path>/CounterWebApp</path>
         			</configuration>
 
