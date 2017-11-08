@@ -9,8 +9,8 @@ pipeline {
 		  }
 	 stage('Deploy') {
 		 steps {
-      		        sh 'cp C:/Users/gaurav.pant/Downloads/onlinequiz/CounterWebApp.war C:/Users/gaurav.pant/Downloads/apache-tomcat-7.0.82/apache-tomcat-7.0.82/webapps/'
-    		        sh 'C:/Users/gaurav.pant/Downloads/apache-tomcat-7.0.82/apache-tomcat-7.0.82/bin/startup.sh'
+      			echo 'Maven Deployment in Progress..'
+			sh 'mvn tomcat7:deploy'
 		    }
 	 }
 
