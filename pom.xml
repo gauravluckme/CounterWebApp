@@ -109,7 +109,7 @@
 				<configuration>
           		        <url>http://localhost:8080/manager</url>
                 		  <server>localhost</server>
-         			   <path>/${project.build.finalName}</path>
+         			   <path>/CounterWebApp</path>
         			</configuration>
 
 			</plugin>
