@@ -7,7 +7,7 @@ pipeline {
         stage('Build') { 
             steps {
                 echo 'Maven Build in Progress..'
-		sh 'mvn -B -DskipTests clean package' 
+		sh 'mvn -B -DskipTests clean install' 
 			}
 		}
   }
