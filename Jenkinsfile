@@ -9,7 +9,7 @@ pipeline {
 		  }
 	 stage('Deploy') {
 		 steps {
-      		        sh 'cp C:/Program Files (x86)/Jenkins/workspace/Pipeline@2/target/CounterWebApp.war C:/Users/gaurav.pant/Downloads/apache-tomcat-7.0.82/apache-tomcat-7.0.82/webapps/'
+      		        sh 'cp C:/Users/gaurav.pant/Downloads/onlinequiz/CounterWebApp.war C:/Users/gaurav.pant/Downloads/apache-tomcat-7.0.82/apache-tomcat-7.0.82/webapps/'
     		        sh 'cd C:/Users/gaurav.pant/Downloads/apache-tomcat-7.0.82/apache-tomcat-7.0.82/bin'
 			sh 'startup'
     }
