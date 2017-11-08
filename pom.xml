@@ -107,8 +107,11 @@
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
 				<configuration>
-					<path>/CounterWebApp</path>
-				</configuration>
+          		        <url>http://localhost:8080/manager</url>
+                		  <server>localhost</server>
+         			   <path>/${project.build.finalName}</path>
+        			</configuration>
+
 			</plugin>
 
 		</plugins>
